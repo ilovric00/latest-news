@@ -3,7 +3,7 @@
 Latest news headlines. 
 Read breaking news stories as they happen around the world. 
 
-Technologies used: [Preact](https://preactjs.com/) and [Redux](http://redux.js.org/)
+Technologies used: [Preact](https://preactjs.com/), [Redux](http://redux.js.org/) and [Redux-Saga](https://redux-saga.js.org/)
 
 ## How to use ##
 First, make sure you have **Node.js** (npm) installed.
@@ -22,7 +22,7 @@ cd latest-news
 npm install
 npm start
 ```
-Navigate to `http://localhost:9000/`.
+Go to http://localhost:9000
 
 
 ### This project is still in progress... ###
