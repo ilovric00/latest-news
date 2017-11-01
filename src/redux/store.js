@@ -1,22 +1,22 @@
-import { createStore, applyMiddleware } from 'redux';
-//import 'babel-polyfill';
-import "regenerator-runtime/runtime"; //triba li??
+import "regenerator-runtime/runtime"; // in order to get async/await working
 
-import createSagaMiddleware from 'redux-saga';
-import logger from 'redux-logger'
-import rootReducer from './reducers';
-import rootSaga from './sagas';
+import { createStore, compose, applyMiddleware } from "redux";
+import createSagaMiddleware from "redux-saga";
+import rootReducer from "./reducers";
+import rootSaga from "./sagas";
 
-export default function configureStore(initialState){
-    const sagaMiddleware = createSagaMiddleware();
-    
-    const store = createStore(
-        rootReducer,
-        initialState,
-        applyMiddleware(sagaMiddleware, logger)
-    );
+export default function configureStore(initialState) {
+  const sagaMiddleware = createSagaMiddleware();
 
-    sagaMiddleware.run(rootSaga);    
+  const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+  const store = createStore(
+    rootReducer,
+    initialState,
+    composeEnhancers(
+      applyMiddleware(sagaMiddleware),
+  ));
 
-    return store;
+  sagaMiddleware.run(rootSaga);
+
+  return store;
 }

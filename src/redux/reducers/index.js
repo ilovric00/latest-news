@@ -1,9 +1,9 @@
-import { combineReducers } from 'redux';
-import news from './news';
+import { combineReducers } from "redux";
+import news from "./news";
 
 let reducers = {
-    news,
-  };
+  news
+};
 
 const rootReducer = combineReducers(reducers);
 

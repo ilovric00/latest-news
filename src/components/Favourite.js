@@ -1,14 +1,14 @@
 import { h } from "preact";
-import style from "../styles/components/article.scss";
+import style from "../styles/components/favourite.scss";
 
-const Article = props => {
+const Favourite = props => {
   return (
     <article class={style.article}>
       <a href={props.url} target="blank">
-        <h1>{props.title}</h1>
         <aside>
           <img src={props.urlToImage} alt="img" />
         </aside>
+        <h1>{props.title}</h1>
         <aside>
           <p>{props.description}</p>
         </aside>
@@ -17,4 +17,4 @@ const Article = props => {
   );
 };
 
-export default Article;
+export default Favourite;
