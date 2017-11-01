@@ -26,3 +26,7 @@ Go to http://localhost:9000
 
 
 ### This project is still in progress... ###
+
+## Demo
+
+![Demo](https://bytebucket.org/IvanLovric/latest-news/raw/04b75066e61af4f7deab289eca874f19d0a120c5/Demo.png)
