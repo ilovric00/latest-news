@@ -1,5 +1,6 @@
 {
-  "name": "preact-app",
+  "name": "latest-news",
+  "author": "Ivan Lovric",
   "version": "1.0.0",
   "scripts": {
     "start": "webpack-dev-server --inline"
@@ -18,6 +19,7 @@
     "webpack-dev-server": "^2.7.1"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "preact": "^8.2.5",
     "preact-redux": "^2.0.2",
     "redux": "^3.7.2",

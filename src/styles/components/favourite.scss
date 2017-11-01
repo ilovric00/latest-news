@@ -1,21 +1,13 @@
 .article {
+  text-align: justify;
   background-color: #ffffff;
-  border-bottom: 1px solid #E1E1E1;
-  margin-bottom: 25px;
-
-  &:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-  }
-
   h1 {
     font-weight: 700;
     letter-spacing: -0.03em;
-    font-size: 36px;
+    font-size: 24px;
   }
   p {
-    font-size: 1.2em;
-    text-align: justify;
+    font-size: 16px;
   }
 
   img {
